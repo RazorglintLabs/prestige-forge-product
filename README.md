@@ -1,4 +1,21 @@
 <img width="2128" height="738" alt="Prestige_Forge_Horizontal" src="https://github.com/user-attachments/assets/b05b6d58-d4cf-4277-b6c0-1d4741e60094" />
+<p align="center">
+  <strong>Proof-first verification engine for builders.</strong><br>
+  Verify work, share proof, and check whether your claims are actually supported.
+</p>
+
+<p align="center">
+  <a href="docs/client-zero.md">Client Zero</a> •
+  <a href="docs/tier-overview.md">Tier Overview</a> •
+  <a href="docs/local-ui-preview.md">Local UI Preview</a> •
+  <a href="examples/free/">Free Examples</a> •
+  <a href="examples/paid-shareable-proof-report/">Proof Report Examples</a> •
+  <a href="examples/paid-claims-safety/">Claims Safety Examples</a>
+</p>
+
+---
+
+Prestige Forge helps builders move from **“we think this is true”** to **“we can actually prove it.”**
 
 # Prestige Forge
 
