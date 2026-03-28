@@ -1,6 +1,6 @@
 # Prestige Forge
 
-**Proof-first operating system for builders.**  
+**Proof-first verification engine for builders.**  
 Verify work, share proof, and check whether your claims are actually supported.
 
 **Version:** v1.0.0 — Complete Build
@@ -58,6 +58,16 @@ This last layer is what changes behavior. It helps catch overstatement before a 
 
 ---
 
+## Local UI
+
+Prestige Forge now includes a local UI — a browser-based interface that lets you run verification, view history, share proof, and check claims without using the terminal.
+
+It runs on your machine, opens in your browser, and talks directly to the proof engine. No cloud. No accounts. Same proofs.
+
+This is an early MVP. See [Local UI Preview](docs/local-ui-preview.md) for what it does today and what comes next.
+
+---
+
 ## Client Zero
 
 Prestige Forge has already been run against Prestige Forge itself.
@@ -65,10 +75,11 @@ Prestige Forge has already been run against Prestige Forge itself.
 Client Zero result:
 
 - **15/15 claims marked SAFE TO SAY**
-- **678/678 tests passing**
-- proof artifacts generated across the full Phase 2 ladder
+- proof artifacts generated across the full product ladder
 
 That means the system has already been used on its own product claims before being positioned for external buyers.
+
+See the [full Client Zero results](docs/client-zero.md) for the complete self-verification record.
 
 ---
 
@@ -143,9 +154,7 @@ Prestige Forge is useful when a team needs to check claims made in:
 
 ## Current status
 
-**Phase 2 family construction: complete**  
-**Families F11–F15: constitutionally closed**  
-**Prestige Forge v1.0.0: complete build**
+**Prestige Forge v1.0.0** — complete build, now with local UI preview
 
 ---
 
@@ -154,3 +163,21 @@ Prestige Forge is useful when a team needs to check claims made in:
 If you want a buyer-safe walkthrough, tier explanation, or example artifact set, start with the materials in this repo.
 
 More curated public examples and branding surfaces will be added here over time.
+
+---
+
+## Documentation
+
+| Document | Purpose |
+|----------|---------|
+| [Tier Overview](docs/tier-overview.md) | Detailed breakdown of free and paid tiers |
+| [Client Zero](docs/client-zero.md) | Self-verification proving run results |
+| [Local UI Preview](docs/local-ui-preview.md) | What the local UI does today and what comes next |
+
+## Examples
+
+| Tier | Folder |
+|------|--------|
+| Free — proof visibility | [examples/free/](examples/free/) |
+| Paid — shareable proof report | [examples/paid-shareable-proof-report/](examples/paid-shareable-proof-report/) |
+| Paid — claims safety | [examples/paid-claims-safety/](examples/paid-claims-safety/) |
