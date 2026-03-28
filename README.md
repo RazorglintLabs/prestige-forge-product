@@ -1,3 +1,5 @@
+<img width="2128" height="738" alt="Prestige_Forge_Horizontal" src="https://github.com/user-attachments/assets/b05b6d58-d4cf-4277-b6c0-1d4741e60094" />
+
 # Prestige Forge
 
 **Proof-first verification engine for builders.**  
