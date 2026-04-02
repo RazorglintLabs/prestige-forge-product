@@ -156,7 +156,7 @@ For builders who need proof visibility and verification history.
 ### Paid — Shareable Proof Report
 For builders who need to hand proof to another person in a clean, inspectable format.
 
-### Paid — Claims Safety Engine
+### Paid — Claims Safety Engine (Beta)
 For builders who need to know whether their claims are actually supported, what drifted, and what to fix first.
 
 ---
@@ -204,4 +204,4 @@ More curated public examples and branding surfaces will be added here over time.
 |------|--------|
 | Free — proof visibility | [examples/free/](examples/free/) |
 | Paid — shareable proof report | [examples/paid-shareable-proof-report/](examples/paid-shareable-proof-report/) |
-| Paid — claims safety | [examples/paid-claims-safety/](examples/paid-claims-safety/) |
+| Paid — claims safety (beta) | [examples/paid-claims-safety/](examples/paid-claims-safety/) |
