@@ -22,7 +22,7 @@ Prestige Forge helps builders move from **“we think this is true”** to **“
 **Proof-first verification engine for builders.**  
 Verify work, share proof, and check whether your claims are actually supported.
 
-**Version:** v1.0.0 — Complete Build
+**Version:** 0.1.0-beta — Source Release
 
 ---
 
@@ -82,6 +82,10 @@ This last layer is what changes behavior. It helps catch overstatement before a 
 Prestige Forge now includes a local UI — a browser-based interface that lets you run verification, view history, share proof, and check claims without using the terminal.
 
 It runs on your machine, opens in your browser, and talks directly to the proof engine. No cloud. No accounts. Same proofs.
+
+![Home — verified project](assets/screenshots/home-verified.png)
+
+![Claims Safety Report — all claims backed by proof](assets/screenshots/claims-safety.png)
 
 This is an early MVP. See [Local UI Preview](docs/local-ui-preview.md) for what it does today and what comes next.
 
@@ -173,7 +177,7 @@ Prestige Forge is useful when a team needs to check claims made in:
 
 ## Current status
 
-**Prestige Forge v1.0.0** — complete build, now with local UI preview
+**Prestige Forge 0.1.0-beta** — source release with local UI
 
 ---
 
@@ -189,6 +193,7 @@ More curated public examples and branding surfaces will be added here over time.
 
 | Document | Purpose |
 |----------|---------|
+| [Quickstart](docs/quickstart.md) | Get running in under five minutes |
 | [Tier Overview](docs/tier-overview.md) | Detailed breakdown of free and paid tiers |
 | [Client Zero](docs/client-zero.md) | Self-verification proving run results |
 | [Local UI Preview](docs/local-ui-preview.md) | What the local UI does today and what comes next |

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "as_of_utc": "2026-04-01T00:00:00Z",
+  "claims": [
+    {
+      "claim_id": "CLM-001",
+      "claim_text": "All unit tests pass consistently",
+      "required_proof_claims": ["All unit tests pass on the current commit"],
+      "audience": "client",
+      "surface": "public",
+      "breadth": "broad",
+      "trust_impact": "high",
+      "max_age_days": 30
+    },
+    {
+      "claim_id": "CLM-002",
+      "claim_text": "Code meets quality standards",
+      "required_proof_claims": ["Code passes all lint rules"],
+      "audience": "client",
+      "surface": "public",
+      "breadth": "broad",
+      "trust_impact": "medium",
+      "max_age_days": 90
+    }
+  ]
+}

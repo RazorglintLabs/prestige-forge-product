@@ -4,14 +4,18 @@
 
 The claims safety engine checks whether the things you say publicly are actually backed by current proof. You declare your claims. The engine compares each one against your proof state and returns a verdict.
 
-This example category is meant to show:
+This folder contains a real claims safety report and example claim registries:
 
-- **One SAFE claim** — fully backed by current proof, safe to publish
-- **One PARTIAL claim** — some proof exists but gaps remain, needs attention before publishing
-- **One UNSAFE claim** — proof is missing or failing, should not be published in its current form
-- **A Fix First ordering view** — a ranked list showing which claims to fix first, scored by trust impact, audience reach, and proof gap severity
+- **`claims_safety_report.txt`** — full claims safety analysis with per-claim verdicts
+- **`example_claim_registry.json`** — a two-claim registry matching the report output
+- **`example_claim_registry_minimal.json`** — the simplest possible one-claim registry
 
-These four cases cover the full range of what the claims safety engine can return. Together they show what it looks like when claims are supported, when they are not, and how the engine helps you prioritize repairs.
+This example shows two claims, both fully backed by current proof (SAFE TO SAY). The report includes:
+
+- **Verdict summary** — total claims and breakdown by safety category
+- **Per-claim verdicts** — each claim with its reason, supporting artifacts, and temporal drift status
+- **Fix First section** — a prioritized list of claims that need attention (empty when all claims are safe)
+- **Temporal drift section** — comparison against historical baseline (when available)
 
 ## What you should learn from these examples
 
@@ -24,5 +28,27 @@ These four cases cover the full range of what the claims safety engine can retur
 
 - **No source code.** The claims safety engine is not included. You see its output, not its internals.
 - **No internal scoring formulas.** Fix First ranking is shown as a result. The weighting logic is not exposed.
-- **No customer data.** When populated, examples will be drawn from Prestige Forge's own Client Zero run — 15 claims, all evaluated against a real proof bundle.
-- **No claim registry templates.** These examples show output, not input configuration.
+- **No customer data.** This example is drawn from Prestige Forge's own demo verification run.
+
+## How to create your own claim registry
+
+A claim registry is a JSON file with three top-level keys:
+
+- **`schema_version`** — always `"1.0"`
+- **`as_of_utc`** — UTC timestamp for freshness comparison (e.g. `"2026-04-01T00:00:00Z"`)
+- **`claims`** — array of claim objects
+
+Each claim needs:
+
+| Field | Values | Purpose |
+|-------|--------|---------|
+| `claim_id` | Any unique string (e.g. `CLM-001`) | Identifies the claim |
+| `claim_text` | Free text | The statement you want to verify |
+| `required_proof_claims` | Array of strings | Must match the `claim` field in your gate check definitions exactly |
+| `audience` | `client` or `internal` | Who sees this claim |
+| `surface` | `public` or `private` | Where the claim appears |
+| `breadth` | `broad` or `narrow` | How widely the claim is used |
+| `trust_impact` | `high`, `medium`, or `low` | How much damage if the claim is wrong |
+| `max_age_days` | Integer >= 1 | Proof older than this is treated as stale |
+
+Save the file as `claim_registry.json` in your project root and it will be detected automatically.

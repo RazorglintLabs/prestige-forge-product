@@ -23,7 +23,7 @@ What you get:
 - **Self-check** — structural pre-flight validation before any run
 - **Vault audit** — independent integrity check of your proof artifacts after the fact
 
-Everything runs offline. No cloud. No accounts. No external dependencies. Python 3.11+ standard library only.
+Everything runs offline. No cloud. No accounts. The proof engine is stdlib-only Python 3.11+. The local UI requires Flask.
 
 This tier is genuinely useful on its own. You can see your proof state, track it over time, and know whether your project's verification is clean — without paying anything.
 
@@ -80,7 +80,7 @@ You write a claim registry declaring exactly what you claim. The engine tells yo
 | Fix First ranking | — | — | Yes |
 | Temporal drift detection | — | — | Yes |
 
-All tiers share the same properties: deterministic output, offline operation, read-only (never mutates your artifacts), and zero external dependencies.
+All tiers share the same properties: deterministic output, offline operation, read-only (never mutates your artifacts), and stdlib-only proof engine (the local UI requires Flask).
 
 ---
 

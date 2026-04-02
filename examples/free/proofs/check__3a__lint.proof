@@ -1,0 +1,15 @@
+{
+  "check_id": "check:lint",
+  "claim": "Code passes all lint rules",
+  "claim_source": "explicit",
+  "commit": "a8819a021e872bde960886df59c9a16b0ae852da",
+  "verdict": "PASS",
+  "evidence_hash": "bfcdb49c309bf882d0c5e4ded055ec8595ecc6ef9c4b35680cea6090c9113b76",
+  "evidence_files": [
+    {
+      "file_path": "evidence/check__3a__lint.stdout.log",
+      "sha256": "0094aa5c59048ae574dda81d7cff33f0a17163dae9938d9364babafaed5a74c6"
+    }
+  ],
+  "minted_at": "2026-04-01T15:44:45.110959+00:00"
+}

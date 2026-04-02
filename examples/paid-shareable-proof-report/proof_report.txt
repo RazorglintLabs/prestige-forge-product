@@ -1,0 +1,62 @@
+SHAREABLE PROOF REPORT
+========================================
+Family:  F14
+Module:  M-017
+Schema:  1.0
+
+COVERAGE
+----------------------------------------
+Source: sealed_phase1_bundle
+Bundle: bundle_a38baf7330884d0faccd76315630165f
+
+CURRENT PROOF STATE
+----------------------------------------
+Overall: PASS
+Pass:    2
+Fail:    0
+Unknown: 0
+
+WORKFLOW SUMMARY
+----------------------------------------
+Ordering basis: manifest_declared
+  1. [PASS] Code passes all lint rules (proofs/check__3a__lint.proof)
+  2. [PASS] All unit tests pass on the current commit (proofs/check__3a__unit-tests.proof)
+
+ARTIFACT REFERENCES
+----------------------------------------
+  manifest.json
+    Path:   manifest.json
+    SHA256: be8f714e5c571148e14407b06616cc0c57d77761dff4f9d3154bf74b80b5579e
+    Role:   Bundle manifest listing proof files and metadata
+  check:lint
+    Path:   proofs/check__3a__lint.proof
+    SHA256: 05a41903d949a8eab65a8ff295cf3e6b9c1b67b7c3631c5a5272829df0a47ed3
+    Role:   Proof artifact for check check:lint
+  check:unit-tests
+    Path:   proofs/check__3a__unit-tests.proof
+    SHA256: f14f0d8041a571673c6e4d27f6d5b0b2aae15b06a53512a628bb3c2c0f820d63
+    Role:   Proof artifact for check check:unit-tests
+
+HOW TO VERIFY
+----------------------------------------
+  Step 1: Locate each artifact listed in artifact_references by its relative_path within the bundle directory.
+    Target: artifact_references
+  Step 2: Compute the SHA-256 hash of each referenced artifact and compare it against the sha256 value in artifact_references.
+    Target: artifact_references.sha256
+  Step 3: Compare the proof_state values (overall_state, pass_count, fail_count, unknown_count) against the verdicts in the supporting proof artifacts.
+    Target: proof_state
+  Step 4: Compare the workflow_summary events, including ordering_basis, against the order and content of the supporting proof artifacts.
+    Target: workflow_summary
+
+LIMITATIONS
+----------------------------------------
+  - This report is derived from sealed artifacts only.
+  - This report does not generate new proof.
+  - Ordering statements are limited to what the artifacts support.
+  - This report is not a claims-safety judgment.
+
+REPORT METADATA
+----------------------------------------
+Format:        text_v1
+Read-only:     true
+Deterministic: true

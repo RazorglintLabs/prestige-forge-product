@@ -6,6 +6,8 @@ Prestige Forge now includes a local UI — a browser-based interface that runs o
 
 This is an early MVP. It is functional, tested, and available now.
 
+![Home — verified project with full action surface](../assets/screenshots/home-verified.png)
+
 ---
 
 ## Why it matters
@@ -24,6 +26,8 @@ The local UI supports four core actions:
 
 Run a full verification pass against your project. The engine executes all configured checks, captures evidence, mints proofs, and assembles a sealed bundle. You see the result in your browser — pass or fail, proof counts, and a summary of what was checked.
 
+![Verification result — 2 checks passed](../assets/screenshots/verify-result.png)
+
 ### History
 
 View your verification history — an ordered timeline of past runs, showing when each check ran and what it found.
@@ -35,6 +39,8 @@ Generate a shareable proof report from a sealed bundle. This produces a structur
 ### Check Claims
 
 Run the claims safety engine against your declared claims. Each claim gets a verdict: SAFE TO SAY, UNSAFE TO SAY, or PARTIALLY SUPPORTED. You also see the Fix First list — which claims to address first, ranked by how much trust damage they carry.
+
+![Claims Safety Report — verdicts for each declared claim](../assets/screenshots/claims-safety.png)
 
 ### Tier gating
 

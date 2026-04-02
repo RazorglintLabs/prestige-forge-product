@@ -1,0 +1,15 @@
+{
+  "check_id": "check:unit-tests",
+  "claim": "All unit tests pass on the current commit",
+  "claim_source": "explicit",
+  "commit": "a8819a021e872bde960886df59c9a16b0ae852da",
+  "verdict": "PASS",
+  "evidence_hash": "c1631ed068586160efed0c67c13ad5bb18128d5e84b8105f02a97d1ee7c8cd10",
+  "evidence_files": [
+    {
+      "file_path": "evidence/check__3a__unit-tests.stdout.log",
+      "sha256": "682daa9c8ec7253aa3bc1b8e0cd7e42852aa5dcc95bac23d0ab5c696396c4ad0"
+    }
+  ],
+  "minted_at": "2026-04-01T15:44:45.058874+00:00"
+}
