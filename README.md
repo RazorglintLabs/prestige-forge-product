@@ -181,11 +181,15 @@ Prestige Forge is useful when a team needs to check claims made in:
 
 ---
 
-## Interested?
+## Get Tier 1 Beta Access
 
-If you want a buyer-safe walkthrough, tier explanation, or example artifact set, start with the materials in this repo.
+Tier 1 unlocks **Share Proof** on top of the Free layer.
 
-More curated public examples and branding surfaces will be added here over time.
+**[Get Tier 1 Beta Access](https://buy.stripe.com/7sY6oBd4Z5Ba1DaeGj1ZS00)**
+
+Beta access is fulfilled manually after purchase.
+
+Beta pricing is currently **$49**. Planned post-beta price: **$79**.
 
 ---
 
