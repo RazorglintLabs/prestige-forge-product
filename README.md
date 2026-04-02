@@ -83,9 +83,9 @@ Prestige Forge now includes a local UI — a browser-based interface that lets y
 
 It runs on your machine, opens in your browser, and talks directly to the proof engine. No cloud. No accounts. Same proofs.
 
-![Home — verified project](assets/screenshots/home-verified.png)
+![Home — 25 checks passed, prestige-forge verified against itself](assets/screenshots/home-verified.png)
 
-![Claims Safety Report — all claims backed by proof](assets/screenshots/claims-safety.png)
+![Claims Safety — 15 of 15 claims marked SAFE TO SAY (Client Zero)](assets/screenshots/claims-safety.png)
 
 This is an early MVP. See [Local UI Preview](docs/local-ui-preview.md) for what it does today and what comes next.
 
