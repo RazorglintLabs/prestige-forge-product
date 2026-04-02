@@ -4,7 +4,11 @@
 
 The shareable proof report is the artifact that lets you prove your verification state to someone else — a buyer, an auditor, a stakeholder — without giving them your source code.
 
-This folder will contain examples of what a recipient actually receives:
+This folder contains a real proof report generated from a sealed bundle:
+
+- **`proof_report.txt`** — the full report a recipient receives
+
+The report includes:
 
 - **Proof state overview** — overall pass/fail, total proof count
 - **Workflow summary** — ordered list of checks and their verdicts
@@ -24,5 +28,5 @@ The report is generated from a sealed proof bundle. The receiver never needs acc
 
 - **No source code.** The report generation engine is not included. You see the output, not the tooling.
 - **No internal paths or module names.** The report is designed to be clean of implementation detail by design — that property carries through to these examples.
-- **No customer data.** When populated, examples will be drawn from Prestige Forge's own Client Zero self-verification run.
+- **No customer data.** This example is drawn from Prestige Forge's own demo verification run.
 - **No report-generation configuration.** How the report is built internally is not shown. What matters here is what the receiver gets.

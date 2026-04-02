@@ -1,0 +1,18 @@
+{
+  "manifest_version": 1,
+  "run_id": "a38baf7330884d0faccd76315630165f",
+  "commit": "a8819a021e872bde960886df59c9a16b0ae852da",
+  "generated_at": "2026-04-01T15:44:45Z",
+  "proof_count": 2,
+  "evidence_file_count": 2,
+  "lineage_event_count": 1,
+  "proof_files": [
+    "proofs/check__3a__lint.proof",
+    "proofs/check__3a__unit-tests.proof"
+  ],
+  "evidence_files": [
+    "evidence/check__3a__lint.stdout.log",
+    "evidence/check__3a__unit-tests.stdout.log"
+  ],
+  "lineage_file": "lineage/lineage.jsonl"
+}

@@ -1,0 +1,59 @@
+CLAIMS SAFETY REPORT
+============================================================
+Artifact: claims_safety_report
+Family: F15 / M-018
+Schema: 1.0
+
+COVERAGE
+------------------------------------------------------------
+Source: sealed_phase1_bundle / bundle_a38baf7330884d0faccd76315630165f
+Registry: claim_registry.json
+Baseline: none
+
+VERDICT SUMMARY
+------------------------------------------------------------
+Total claims: 2
+SAFE TO SAY: 2
+UNSAFE TO SAY: 0
+PARTIALLY SUPPORTED: 0
+
+PER-CLAIM VERDICTS
+------------------------------------------------------------
+[CLM-001] SAFE TO SAY
+  Claim: All unit tests pass consistently
+  Reason: FULL_SUPPORT_CURRENT
+  Max age: 30 days
+  Drift: NO_BASELINE
+  Supported: All unit tests pass on the current commit
+  Artifacts: proofs/check__3a__unit-tests.proof
+
+[CLM-002] SAFE TO SAY
+  Claim: Code meets quality standards
+  Reason: FULL_SUPPORT_CURRENT
+  Max age: 90 days
+  Drift: NO_BASELINE
+  Supported: Code passes all lint rules
+  Artifacts: proofs/check__3a__lint.proof
+
+FIX FIRST
+------------------------------------------------------------
+No claims require fixing.
+
+TEMPORAL DRIFT
+------------------------------------------------------------
+Baseline: NO_BASELINE
+Drifted claims: 0
+
+LIMITATIONS
+------------------------------------------------------------
+- This report is based on the configured claim registry and current proof state only.
+- SAFE TO SAY is not legal, regulatory, or compliance certification.
+- This engine compares declared claims; it does not infer the full claim universe.
+- Temporal drift findings are limited to the historical comparison posture available.
+- This report does not generate new proof or mutate source artifacts.
+
+REPORT METADATA
+------------------------------------------------------------
+Render format: text_v1
+Read-only: True
+Deterministic: True
