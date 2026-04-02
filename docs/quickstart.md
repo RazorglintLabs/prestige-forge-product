@@ -60,7 +60,7 @@ If your tier includes Share Proof, click **Generate** under the Share Proof card
 
 See [examples/paid-shareable-proof-report/](../examples/paid-shareable-proof-report/) for what the output looks like.
 
-## 8. Check claims safety (Tier 2)
+## 8. Check claims safety (Tier 2 — Beta)
 
 If your tier includes Check Claims, create a `claim_registry.json` in your **project root** (the same folder you selected in Step 4) listing the claims you make publicly. The UI auto-detects `claim_registry.json` or `claims.json` in your project root when you save project settings. Then click **Run** under the Check Claims card.
 

@@ -1,4 +1,4 @@
-# Paid Tier 2 — Claims Safety Examples
+# Paid Tier 2 (Beta) — Claims Safety Examples
 
 ## What this category covers
 

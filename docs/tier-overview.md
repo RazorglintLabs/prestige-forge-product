@@ -48,7 +48,7 @@ No source code appears in the report. No internal paths. The receiver gets a cle
 
 ---
 
-## Paid Tier 2 — Claims Safety
+## Paid Tier 2 (Beta) — Claims Safety
 
 Most teams can produce proof. Far fewer can answer the question: **are the things we say publicly actually backed by current proof?**
 
@@ -71,7 +71,7 @@ You write a claim registry declaring exactly what you claim. The engine tells yo
 
 ## Comparison
 
-| | Free | Paid Tier 1 | Paid Tier 2 |
+| | Free | Paid Tier 1 | Paid Tier 2 (Beta) |
 |---|---|---|---|
 | See proof state | Yes | Yes | Yes |
 | Verification history | Yes | Yes | Yes |
