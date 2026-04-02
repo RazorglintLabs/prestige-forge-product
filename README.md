@@ -205,3 +205,9 @@ More curated public examples and branding surfaces will be added here over time.
 | Free — proof visibility | [examples/free/](examples/free/) |
 | Paid — shareable proof report | [examples/paid-shareable-proof-report/](examples/paid-shareable-proof-report/) |
 | Paid — claims safety (beta) | [examples/paid-claims-safety/](examples/paid-claims-safety/) |
+
+---
+
+## License
+
+Proprietary. © 2026 TCOG Collective LLC / Razorglint Labs. All rights reserved. See [LICENSE](LICENSE) for details.
