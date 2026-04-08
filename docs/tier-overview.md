@@ -31,6 +31,9 @@ This tier is genuinely useful on its own. You can see your proof state, track it
 
 ## Paid Tier 1 — Shareable Proof Report
 
+**Beta price: €49** — [Get Tier 1 Beta Access](https://buy.stripe.com/7sY6oBd4Z5Ba1DaeGj1ZS00)  
+Planned post-beta price: €79. All rights reserved.
+
 The free tier proves things to you. Paid Tier 1 lets you prove things to someone else.
 
 A shareable proof report is a structured document generated from a sealed proof bundle. It is designed to be handed to a buyer, auditor, stakeholder, or reviewer so they can inspect your proof state without needing your source code.

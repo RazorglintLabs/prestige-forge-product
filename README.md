@@ -161,11 +161,13 @@ Those remain private.
 ### Free
 For builders who need proof visibility and verification history.
 
-### Paid — Shareable Proof Report
-For builders who need to hand proof to another person in a clean, inspectable format.
+### Paid Tier 1 — Shareable Proof Report (€49 beta)
+For builders who need to hand proof to another person in a clean, inspectable format.  
+[Get Tier 1 Beta Access →](#get-tier-1-beta-access)
 
-### Paid — Claims Safety Engine (Beta)
-For builders who need to know whether their claims are actually supported, what drifted, and what to fix first.
+### Paid Tier 2 — Claims Safety Engine (€89 beta)
+For builders who need to know whether their claims are actually supported, what drifted, and what to fix first.  
+[Get Tier 2 Beta Access →](#get-tier-2-beta-access)
 
 ---
 
