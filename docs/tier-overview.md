@@ -50,6 +50,9 @@ No source code appears in the report. No internal paths. The receiver gets a cle
 
 ## Paid Tier 2 (Beta) — Claims Safety
 
+**Beta price: €89** — [Get Tier 2 Beta Access](STRIPE_TIER2_LINK_HERE)  
+Planned post-beta price: €129–€149. All rights reserved.
+
 Most teams can produce proof. Far fewer can answer the question: **are the things we say publicly actually backed by current proof?**
 
 The claims safety engine compares a set of declared claims against the current proof state and returns a verdict for each one:

@@ -64,6 +64,8 @@ See [examples/paid-shareable-proof-report/](../examples/paid-shareable-proof-rep
 
 If your tier includes Check Claims, create a `claim_registry.json` in your **project root** (the same folder you selected in Step 4) listing the claims you make publicly. The UI auto-detects `claim_registry.json` or `claims.json` in your project root when you save project settings. Then click **Run** under the Check Claims card.
 
+> **No claim registry found?** In Project Setup, Prestige Forge can create a starter registry for you — one example claim, ready to edit.
+
 The engine compares each claim against your current proof state and returns:
 
 - **SAFE TO SAY** — fully backed by evidence

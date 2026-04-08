@@ -83,6 +83,8 @@ Prestige Forge now includes a local UI — a browser-based interface that lets y
 
 It runs on your machine, opens in your browser, and talks directly to the proof engine. No cloud. No accounts. Same proofs.
 
+Project Setup auto-detects your vault, latest bundle, and claim registry when you point at a project folder. No claim registry? The UI can create a starter for you.
+
 ![Project Setup — point at your project, auto-detect claims](assets/screenshots/project-setup.png)
 
 ![Home — 25 checks passed, prestige-forge verified against itself](assets/screenshots/home-verified.png)
@@ -195,7 +197,23 @@ Tier 1 unlocks **Share Proof** on top of the Free layer.
 
 Beta access is fulfilled manually after purchase.
 
-Beta pricing is currently **$49**. Planned post-beta price: **$79**.
+Beta pricing is currently **€49**. Planned post-beta price: **€79**.
+
+---
+
+## Get Tier 2 Beta Access
+
+Tier 2 unlocks **Claims Safety** on top of everything in Tier 1.
+
+Compare your declared claims against current proof state. Get per-claim verdicts, Fix First ranking, and temporal drift detection.
+
+**[Get Tier 2 Beta Access](STRIPE_TIER2_LINK_HERE)**
+
+Beta access is fulfilled manually after purchase.
+
+Beta pricing is currently **€89**. Planned post-beta price: **€129–€149**.
+
+All rights reserved. © 2026 TCOG Collective LLC / Razorglint Labs.
 
 ---
 
