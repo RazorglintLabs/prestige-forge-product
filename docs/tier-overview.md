@@ -53,7 +53,7 @@ No source code appears in the report. No internal paths. The receiver gets a cle
 
 ## Paid Tier 2 (Beta) — Claims Safety
 
-**Beta price: €89** — [Get Tier 2 Beta Access](STRIPE_TIER2_LINK_HERE)  
+**Beta price: €89** — [Get Tier 2 Beta Access](https://buy.stripe.com/5kQeV79SNd3Cfu01Tx1ZS01)  
 Planned post-beta price: €129–€149. All rights reserved.
 
 Most teams can produce proof. Far fewer can answer the question: **are the things we say publicly actually backed by current proof?**

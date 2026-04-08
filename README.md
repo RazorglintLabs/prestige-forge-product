@@ -209,7 +209,7 @@ Tier 2 unlocks **Claims Safety** on top of everything in Tier 1.
 
 Compare your declared claims against current proof state. Get per-claim verdicts, Fix First ranking, and temporal drift detection.
 
-**[Get Tier 2 Beta Access](STRIPE_TIER2_LINK_HERE)**
+**[Get Tier 2 Beta Access](https://buy.stripe.com/5kQeV79SNd3Cfu01Tx1ZS01)**
 
 Beta access is fulfilled manually after purchase.
 
