@@ -1,6 +1,6 @@
 <img width="2128" height="738" alt="Prestige_Forge_Horizontal" src="https://github.com/user-attachments/assets/b05b6d58-d4cf-4277-b6c0-1d4741e60094" />
 <p align="center">
-  <strong>Proof-first verification engine for builders.</strong><br>
+  <strong>Proof-first verification engine.</strong><br>
   Verify work, share proof, and check whether your claims are actually supported.
 </p>
 
@@ -19,10 +19,10 @@ Prestige Forge helps builders move from **“we think this is true”** to **“
 
 # Prestige Forge
 
-**Proof-first verification engine for builders.**  
+**Proof-first verification engine.**  
 Verify work, share proof, and check whether your claims are actually supported.
 
-**Version:** 0.1.0-beta — Source Release
+**Version:** 0.1.0 — Source Release
 
 ---
 
@@ -95,7 +95,7 @@ Project Setup auto-detects your vault, latest bundle, and claim registry when yo
 
 ![Verification History — 25/25 checks with full claim descriptions](assets/screenshots/history.png)
 
-This is an early MVP. See [Local UI Preview](docs/local-ui-preview.md) for what it does today and what comes next.
+This is the current release. See [Local UI Preview](docs/local-ui-preview.md) for what it does today and what comes next.
 
 ---
 
@@ -159,14 +159,14 @@ Those remain private.
 ## Tier overview
 
 ### Free
-For builders who need proof visibility and verification history.
+For teams who need proof visibility and verification history.
 
-### Paid Tier 1 — Shareable Proof Report (€49 beta)
-For builders who need to hand proof to another person in a clean, inspectable format.  
+### Paid Tier 1 — Shareable Proof Report (€49)
+For teams who need to hand proof to another person in a clean, inspectable format.  
 [Get Tier 1 Beta Access →](#get-tier-1-beta-access)
 
-### Paid Tier 2 — Claims Safety Engine (€89 beta)
-For builders who need to know whether their claims are actually supported, what drifted, and what to fix first.  
+### Paid Tier 2 — Claims Safety Engine (€89)
+For teams who need to know whether their claims are actually supported, what drifted, and what to fix first.  
 [Get Tier 2 Beta Access →](#get-tier-2-beta-access)
 
 ---
@@ -187,33 +187,33 @@ Prestige Forge is useful when a team needs to check claims made in:
 
 ## Current status
 
-**Prestige Forge 0.1.0-beta** — source release with local UI
+**Prestige Forge 0.1.0** — source release with local UI
 
 ---
 
-## Get Tier 1 Beta Access
+## Get Tier 1 Access
 
 Tier 1 unlocks **Share Proof** on top of the Free layer.
 
-**[Get Tier 1 Beta Access](https://buy.stripe.com/7sY6oBd4Z5Ba1DaeGj1ZS00)**
+**[Get Tier 1 Access](https://buy.stripe.com/7sY6oBd4Z5Ba1DaeGj1ZS00)**
 
-Beta access is fulfilled manually after purchase.
+Access is fulfilled manually after purchase.
 
-Beta pricing is currently **€49**. Planned post-beta price: **€79**.
+Current pricing is **€49**. Planned post-launch price: **€79**.
 
 ---
 
-## Get Tier 2 Beta Access
+## Get Tier 2 Access
 
 Tier 2 unlocks **Claims Safety** on top of everything in Tier 1.
 
 Compare your declared claims against current proof state. Get per-claim verdicts, Fix First ranking, and temporal drift detection.
 
-**[Get Tier 2 Beta Access](https://buy.stripe.com/5kQeV79SNd3Cfu01Tx1ZS01)**
+**[Get Tier 2 Access](https://buy.stripe.com/5kQeV79SNd3Cfu01Tx1ZS01)**
 
-Beta access is fulfilled manually after purchase.
+Access is fulfilled manually after purchase.
 
-Beta pricing is currently **€89**. Planned post-beta price: **€129–€149**.
+Current pricing is **€89**. Planned post-launch price: **€129–€149**.
 
 All rights reserved. © 2026 TCOG Collective LLC / Razorglint Labs.
 
@@ -234,7 +234,7 @@ All rights reserved. © 2026 TCOG Collective LLC / Razorglint Labs.
 |------|--------|
 | Free — proof visibility | [examples/free/](examples/free/) |
 | Paid — shareable proof report | [examples/paid-shareable-proof-report/](examples/paid-shareable-proof-report/) |
-| Paid — claims safety (beta) | [examples/paid-claims-safety/](examples/paid-claims-safety/) |
+| Paid — claims safety | [examples/paid-claims-safety/](examples/paid-claims-safety/) |
 
 ---
 
