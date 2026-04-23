@@ -1,7 +1,7 @@
 <img width="2128" height="738" alt="Prestige_Forge_Horizontal" src="https://github.com/user-attachments/assets/b05b6d58-d4cf-4277-b6c0-1d4741e60094" />
+
 <p align="center">
-  <strong>Proof-first verification engine.</strong><br>
-  Verify work, share proof, and check whether your claims are actually supported.
+  <strong>A proof-first verification engine that tells you what a system can safely claim — and what it cannot.</strong>
 </p>
 
 <p align="center">
@@ -15,229 +15,238 @@
 
 ---
 
-Prestige Forge helps builders move from **“we think this is true”** to **“we can actually prove it.”**
-
 # Prestige Forge
 
-**Proof-first verification engine.**  
-Verify work, share proof, and check whether your claims are actually supported.
+**A proof-first verification engine that turns system claims into verifiable truth.**
 
-**Version:** 0.1.0 — Source Release
+Prestige Forge evaluates what a system says about itself and returns:
 
----
+- **SAFE TO SAY**
+- **PARTIALLY SUPPORTED**
+- **UNSAFE TO SAY**
 
-## What Prestige Forge does
+Backed by:
 
-Prestige Forge helps builders move from “we think this is true” to “we can actually prove it.”
+- deterministic evidence
+- cryptographic proof artifacts
+- receiver-verifiable bundles
 
-It gives you a clear ladder:
-
-### Free layer
-See proof state and verification history.
-
-### Paid layer 1
-Turn proof into a receiver-readable report you can hand to someone else.
-
-### Paid layer 2
-Check whether your outward claims are actually backed by current proof, see what is risky, and know what to fix first.
+No dashboards.  
+No “trust me.”  
+**Only verifiable truth.**
 
 ---
 
 ## Why this exists
 
-A lot of teams can show proof artifacts.
+Most systems cannot be independently verified.
 
-Far fewer can answer the harder questions:
+- Test coverage measures lines, not truth  
+- Dashboards show activity, not proof  
+- Documentation describes intent, not reality  
 
-- What proof do we actually have?
-- Can another person inspect it without a walkthrough?
-- Are the claims we make still supported right now?
-- What drifted?
-- What should we fix first before we say too much?
+So when someone says:
 
-Prestige Forge is built to answer those questions in order.
+> “This system is secure / compliant / production-ready”
+
+You cannot verify that claim.
+
+**Prestige Forge fixes that.**
+
+---
+
+## What Prestige Forge actually does
+
+Given a repository and a set of claims, it:
+
+1. Executes governed verification checks  
+2. Generates deterministic evidence and proof records  
+3. Binds results to a commit  
+4. Produces a portable proof bundle  
+5. Evaluates each claim with a safety verdict  
+
+Result:
+
+> You don’t get “it works”  
+> You get **what is safe to say — and what is not**
+
+---
+
+## Example outcome
+
+| Claim | Verdict |
+|------|--------|
+| “All endpoints are authenticated” | PARTIALLY SUPPORTED |
+| “System is fully compliant” | UNSAFE TO SAY |
+| “Audit trail exists for all actions” | SAFE TO SAY |
+
+---
+
+## What this changes
+
+Prestige Forge does not prove that a system is “good.”
+
+**It proves what can be truthfully claimed about it.**
+
+That difference matters:
+
+- before selling a system  
+- before publishing claims  
+- before audits  
+- before someone else checks for you  
 
 ---
 
 ## Product ladder
 
-### 1) Proof visibility
-See the current proof state.
+### Free — Proof visibility
+See current proof state and verification history.
 
-### 2) Verification history
-Understand how proof was verified over time.
+### Tier 1 — Shareable Proof Report (€49)
+Turn proof into a receiver-verifiable artifact you can hand to someone else.
 
-### 3) Shareable proof report
-Hand proof to a receiver in a structured, inspectable format.
+### Tier 2 — Claims Safety Engine (€89)
+Check whether your claims are:
 
-### 4) Claims safety engine
-Check whether your claims are safe to say, unsafe to say, or only partially supported.
+- safe to say  
+- partially supported  
+- unsafe to say  
 
-This last layer is what changes behavior. It helps catch overstatement before a client, buyer, reviewer, or auditor catches it for you.
+Includes:
+- per-claim verdicts  
+- fix-first prioritization  
+- drift awareness  
 
 ---
 
 ## Local UI
 
-Prestige Forge now includes a local UI — a browser-based interface that lets you run verification, view history, share proof, and check claims without using the terminal.
+Prestige Forge includes a local UI — a browser-based interface for running verification, inspecting proof, and checking claims.
 
-It runs on your machine, opens in your browser, and talks directly to the proof engine. No cloud. No accounts. Same proofs.
+- Runs locally  
+- No cloud  
+- No accounts  
+- Same proof engine  
 
-Project Setup auto-detects your vault, latest bundle, and claim registry when you point at a project folder. No claim registry? The UI can create a starter for you.
+Project Setup automatically:
 
-![Project Setup — point at your project, auto-detect claims](assets/screenshots/project-setup.png)
+- detects your vault  
+- finds the latest bundle  
+- loads your claim registry  
+- creates one if missing  
 
-![Home — 25 checks passed, prestige-forge verified against itself](assets/screenshots/home-verified.png)
+![Project Setup — auto-detect and initialize](assets/screenshots/project-setup.png)
 
-![Shareable Proof Report — hand proof to a receiver without exposing source](assets/screenshots/share-proof.png)
+![Home — verified system state](assets/screenshots/home-verified.png)
 
-![Claims Safety — 15 of 15 claims marked SAFE TO SAY (Client Zero)](assets/screenshots/claims-safety.png)
+![Shareable Proof Report](assets/screenshots/share-proof.png)
 
-![Verification History — 25/25 checks with full claim descriptions](assets/screenshots/history.png)
+![Claims Safety Engine](assets/screenshots/claims-safety.png)
 
-This is the current release. See [Local UI Preview](docs/local-ui-preview.md) for what it does today and what comes next.
+![Verification History](assets/screenshots/history.png)
 
 ---
 
 ## Client Zero
 
-Prestige Forge has already been run against Prestige Forge itself.
+Prestige Forge has already verified itself.
 
-Client Zero result:
+**Result:**
+- 15/15 claims → SAFE TO SAY  
+- Full proof ladder executed  
+- Receiver-verifiable artifacts produced  
 
-- **15/15 claims marked SAFE TO SAY**
-- proof artifacts generated across the full product ladder
+This system was tested against its own claims before external use.
 
-That means the system has already been used on its own product claims before being positioned for external buyers.
-
-See the [full Client Zero results](docs/client-zero.md) for the complete self-verification record.
+See full results → [Client Zero](docs/client-zero.md)
 
 ---
 
-## What buyers get
+## What buyers actually get
 
-Depending on tier, buyers can get:
+Depending on tier:
 
-- proof visibility surfaces
-- verification history
-- shareable proof reports
-- claims safety reports
-- fix-first prioritization
-- temporal drift awareness
+- proof visibility  
+- verification history  
+- shareable proof artifacts  
+- claim safety evaluation  
+- fix-first prioritization  
+- drift detection over time  
 
 ---
 
 ## What this repo is
 
-This is the **buyer-safe product surface** for Prestige Forge.
+This is the **buyer-safe product surface**.
 
-It is designed to show:
+It shows:
 
-- what the product does
-- how the tiers differ
-- what kind of artifacts buyers can expect
-- why the final paid tier matters
+- what the system does  
+- what outputs look like  
+- how verification works  
+- what can be independently inspected  
 
 ---
 
 ## What this repo is not
 
-This repo is **not** the full internal build repository.
+This repo does not expose:
 
-It does not expose:
-
-- full governance internals
-- deep constitutional history
-- sensitive implementation details
-- private architecture surfaces
-- sovereign internal tooling
+- full governance internals  
+- deep architectural layers  
+- private system components  
+- sovereign internal tooling  
 
 Those remain private.
 
 ---
 
-## Tier overview
-
-### Free
-For teams who need proof visibility and verification history.
-
-### Paid Tier 1 — Shareable Proof Report (€49)
-For teams who need to hand proof to another person in a clean, inspectable format.  
-[Get Tier 1 Beta Access →](#get-tier-1-beta-access)
-
-### Paid Tier 2 — Claims Safety Engine (€89)
-For teams who need to know whether their claims are actually supported, what drifted, and what to fix first.  
-[Get Tier 2 Beta Access →](#get-tier-2-beta-access)
-
----
-
 ## Example use cases
 
-Prestige Forge is useful when a team needs to check claims made in:
+Prestige Forge is used to verify claims in:
 
-- product documentation
-- buyer-facing repos
-- README files
-- release notes
-- client deliverables
-- internal verification summaries
-- launch materials
+- README files  
+- product documentation  
+- release notes  
+- client deliverables  
+- internal system summaries  
+- launch materials  
 
 ---
 
 ## Current status
 
-**Prestige Forge 0.1.0** — source release with local UI
+**Version 0.1.0 — Source release with local UI**
 
 ---
 
 ## Get Tier 1 Access
 
-Tier 1 unlocks **Share Proof** on top of the Free layer.
+Unlock Shareable Proof Reports.
 
-**[Get Tier 1 Access](https://buy.stripe.com/7sY6oBd4Z5Ba1DaeGj1ZS00)**
-
-Access is fulfilled manually after purchase.
-
-Current pricing is **€49**. Planned post-launch price: **€79**.
+👉 https://buy.stripe.com/7sY6oBd4Z5Ba1DaeGj1ZS00
 
 ---
 
 ## Get Tier 2 Access
 
-Tier 2 unlocks **Claims Safety** on top of everything in Tier 1.
+Unlock Claims Safety Engine.
 
-Compare your declared claims against current proof state. Get per-claim verdicts, Fix First ranking, and temporal drift detection.
-
-**[Get Tier 2 Access](https://buy.stripe.com/5kQeV79SNd3Cfu01Tx1ZS01)**
-
-Access is fulfilled manually after purchase.
-
-Current pricing is **€89**. Planned post-launch price: **€129–€149**.
-
-All rights reserved. © 2026 TCOG Collective LLC / Razorglint Labs.
+👉 https://buy.stripe.com/5kQeV79SNd3Cfu01Tx1ZS01
 
 ---
 
 ## Documentation
 
 | Document | Purpose |
-|----------|---------|
-| [Quickstart](docs/quickstart.md) | Get running in under five minutes |
-| [Tier Overview](docs/tier-overview.md) | Detailed breakdown of free and paid tiers |
-| [Client Zero](docs/client-zero.md) | Self-verification proving run results |
-| [Local UI Preview](docs/local-ui-preview.md) | What the local UI does today and what comes next |
-
-## Examples
-
-| Tier | Folder |
-|------|--------|
-| Free — proof visibility | [examples/free/](examples/free/) |
-| Paid — shareable proof report | [examples/paid-shareable-proof-report/](examples/paid-shareable-proof-report/) |
-| Paid — claims safety | [examples/paid-claims-safety/](examples/paid-claims-safety/) |
+|----------|--------|
+| Quickstart | Get running in minutes |
+| Tier Overview | Full breakdown of tiers |
+| Client Zero | Self-verification proof |
+| Local UI Preview | UI capabilities |
 
 ---
 
 ## License
 
-Proprietary. © 2026 TCOG Collective LLC / Razorglint Labs. All rights reserved. See [LICENSE](LICENSE) for details.
+Proprietary. © 2026 TCOG Collective LLC / Razorglint Labs.
