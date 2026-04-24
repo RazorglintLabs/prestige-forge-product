@@ -1,3 +1,6 @@
+> Most systems cannot prove what they claim.  
+> Prestige Forge tells you what is safe to say — and what is not.
+
 <img width="2128" height="738" alt="Prestige_Forge_Horizontal" src="https://github.com/user-attachments/assets/b05b6d58-d4cf-4277-b6c0-1d4741e60094" />
 
 <p align="center">
@@ -12,6 +15,27 @@
   <a href="examples/paid-shareable-proof-report/">Proof Report Examples</a> •
   <a href="examples/paid-claims-safety/">Claims Safety Examples</a>
 </p>
+
+---
+
+## Try this in 2 minutes
+
+```bash
+git clone https://github.com/RazorglintLabs/prestige-forge-product.git
+cd prestige-forge-product
+
+python -m forge_cli init
+python -m forge_cli self-check
+python -m forge_cli run
+```
+
+Then open the local UI and inspect:
+
+- what was verified
+- what proof was generated
+- what claims are safe to say
+
+No setup. No dependencies. No accounts.
 
 ---
 
@@ -159,6 +183,22 @@ Prestige Forge has already verified itself.
 This system was tested against its own claims before external use.
 
 See full results → [Client Zero](docs/client-zero.md)
+
+---
+
+## External verification (real example)
+
+Prestige Forge was run on an external repository ([httpx](https://github.com/encode/httpx)) without modifying a single file.
+
+Result:
+- 1/8 claims → **SAFE TO SAY**
+- 7/8 claims → **UNSAFE TO SAY**
+
+No code changes. No tuning.
+
+This is what real verification looks like: not everything passes.
+
+That's the point.
 
 ---
 
