@@ -200,6 +200,17 @@ This is what real verification looks like: not everything passes.
 
 That's the point.
 
+### click — public open-source library
+
+Prestige Forge was also run against [`pallets/click`](https://github.com/pallets/click) without modifying source files.
+
+- Claims evaluated: 7
+- SAFE TO SAY: 6/7
+- UNSAFE TO SAY: 1/7
+- Fix First flagged the deliberately unbacked claim
+
+This shows Prestige Forge can produce clean support where proof exists, while still refusing unsupported claims.
+
 ---
 
 ## What buyers actually get
