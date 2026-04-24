@@ -73,7 +73,7 @@ So when someone says:
 
 > “This system is secure / compliant / production-ready”
 
-You cannot verify that claim.
+You often cannot verify that claim from the available proof.
 
 **Prestige Forge fixes that.**
 
@@ -192,7 +192,7 @@ Prestige Forge was run on an external repository ([httpx](https://github.com/enc
 
 Result:
 - 1/8 claims → **SAFE TO SAY**
-- 7/8 claims → **UNSAFE TO SAY**
+- 7/8 claims → **PARTIALLY SUPPORTED or UNSAFE TO SAY**
 
 No code changes. No tuning.
 
