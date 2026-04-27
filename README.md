@@ -2,9 +2,22 @@
 
 > **Check what you can safely say — before it ships.**
 
+<h1 align="center">Prestige Forge</h1>
+
 <p align="center">
-  <img src="assets/prestige-forge-banner.jpg" alt="Prestige Forge — proof-first claim safety engine" width="100%">
+  <strong>Proof-first claim-safety for public claims, buyer decks, audit material, and evidence packs.</strong><br>
+  <em>Check what you can safely say — before it ships.</em>
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claim%20Safety-SAFE%20TO%20SAY-brightgreen?style=flat-square" alt="Claim Safety">
+  <img src="https://img.shields.io/badge/Proof%20Engine-stdlib--only-blue?style=flat-square" alt="Proof Engine">
+  <img src="https://img.shields.io/badge/Local%20UI-Flask-009688?style=flat-square" alt="Local UI">
+  <img src="https://img.shields.io/badge/No%20Cloud-local--first-black?style=flat-square" alt="Local First">
+  <img src="https://img.shields.io/badge/Claim%20Verdicts-SAFE%20%7C%20QUALIFIER%20%7C%20UNSAFE%20%7C%20FORBIDDEN-orange?style=flat-square" alt="Claim Verdicts">
+</p>
+
+---
 
 Prestige Forge is a proof-first claim-safety engine. It compares system claims against available evidence and returns buyer-safe verdicts:
 
