@@ -45,6 +45,44 @@ This shows Prestige Forge can produce clean support where proof exists, while st
 
 ---
 
+## Internal Razorglint Use
+
+Prestige Forge is no longer only a self-verification demo.
+
+It has been used internally by Razorglint Labs to check public-facing claim language across systems-architecture, Command Guardian, FleetSim, LinkedIn/outreach wording, and buyer-facing proof material.
+
+This internal use produced claim safety packs, approved/forbidden claim lists, required qualifiers, outreach guardrails, and proof-backed public language.
+
+This does not claim customer deployment, third-party validation, certification, or legal compliance. It shows that Prestige Forge is already being used for the job it was built to do: preventing unsupported public claims before publication.
+
+### Client Zero — Self-Verification
+
+![Client Zero — 15/15 SAFE TO SAY](assets/proof/prestige_forge_client_zero_15_safe.jpg)
+
+### Systems Architecture — 78 Claims Audited
+
+![Systems Architecture Claim Safety Pack](assets/proof/prestige_forge_systems_architecture_claim_pack.jpg)
+
+### Unsafe Claim Firewall
+
+![Forbidden Claims Blocked](assets/proof/prestige_forge_forbidden_claims_blocked.jpg)
+
+### Command Guardian — Post-Remediation Claim Safety
+
+![Command Guardian Claim Safety](assets/proof/prestige_forge_command_guardian_claim_safety.jpg)
+
+### FleetSim — Evidence Scoping
+
+![FleetSim Claim Safety](assets/proof/prestige_forge_fleetsim_claim_safety.jpg)
+
+### Public Language Law
+
+![Public Language Law](assets/proof/prestige_forge_public_language_law.jpg)
+
+See [Internal Use Proof Manifest](assets/proof/PRESTIGE_FORGE_INTERNAL_USE_PROOF_MANIFEST.md) for source artifacts and non-claims.
+
+---
+
 ## Version
 
 **0.1.0 — Source Release**
