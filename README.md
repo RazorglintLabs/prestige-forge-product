@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo/brand-pack/readme/readme-text-closest-1400x700.png" alt="Prestige Forge" width="700">
+  <img src="assets/logo/brand-pack/Horizontal/Prestige_Forge_Horizontal.png" alt="Prestige Forge" width="500">
 </p>
 
 # Prestige Forge
