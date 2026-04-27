@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo/brand-pack/readme/readme-text-closest-1400x700.png" alt="Prestige Forge" width="700">
+</p>
+
 # Prestige Forge
 
 > **Check what you can safely say — before it ships.**
