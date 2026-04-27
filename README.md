@@ -2,7 +2,6 @@
   <img src="assets/logo/brand-pack/Horizontal/Prestige_Forge_Horizontal.png" alt="Prestige Forge" width="500">
 </p>
 
-# Prestige Forge
 
 > **Check what you can safely say — before it ships.**
 
