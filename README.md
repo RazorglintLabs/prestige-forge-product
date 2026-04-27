@@ -1,47 +1,33 @@
 # Prestige Forge
 
-**Turn your project claims into verifiable proof.**
+> **Check what you can safely say — before it ships.**
 
-Prestige Forge produces sealed proof bundles — per-check evidence, cryptographic proofs, and run manifests bound to git commits. Offline. Deterministic. Stdlib-only proof engine (Flask for UI).
+Prestige Forge is a proof-first claim-safety engine. It compares system claims against available evidence and returns buyer-safe verdicts:
 
----
+- **SAFE TO SAY** — fully backed by evidence
+- **SAFE WITH QUALIFIER** — supported, but requires stated limitation
+- **UNSAFE / OVERCLAIM** — evidence does not support this claim
+- **FORBIDDEN** — absolute prohibition, no safe rewrite possible
+- **NEEDS MORE EVIDENCE** — plausible but insufficiently backed
 
-## Product Ladder
+It is designed for teams preparing public posts, buyer decks, audit evidence, launch pages, investor materials, and governance documentation — anywhere unsupported claims create risk.
 
-### Free — Proof Visibility
-
-See your proof state. Badge and proof summary, verification history, structural self-check, and vault audit. Runs offline with stdlib-only Python. No accounts, no cloud. The local UI requires Flask.
-
-### Paid Tier 1 — Trust Transfer
-
-Share proof without sharing code. Generate a shareable proof report for buyers, auditors, or stakeholders — includes artifact references, workflow summaries, and verification instructions. The receiver can verify without source access.
-
-### Paid Tier 2 — Claims Safety
-
-Know what you can safely say. Compare declared claims against current proof state. Get per-claim verdicts: SAFE TO SAY, UNSAFE TO SAY, or PARTIALLY SUPPORTED. Fix First ranking shows exactly which claims to address first. Temporal drift detection catches when proof degrades over time.
+![Claims Safety Report](assets/screenshots/claims-safety.png)
 
 ---
 
-## We Run It On Ourselves
+## What It Catches
 
-Prestige Forge verified its own claims using its own engine. 15 claims declared. 25 proof checks executed. Result: 15/15 SAFE TO SAY, 0 UNSAFE. The claims safety report we use internally is the same one customers receive.
+| Unsafe claim | Safer replacement |
+|---|---|
+| "production-ready" | "hardened prototype" / "pilot-ready" (if supported) |
+| "certified compliant" | "evidence-mapped" / "readiness-oriented" |
+| "tamper-proof" | "tamper-evident" |
+| "all bypasses closed" | "tested bypass classes closed" |
+| "deployed in the wild" | "internally tested" / "simulation-grade" / "pilot-ready" |
+| "verified truth" | "evidence-backed claim verdict" |
 
-See [Client Zero results](docs/client-zero.md) for the full self-verification record.
-
----
-
-## External Verification
-
-### click — public open-source library
-
-Prestige Forge was run against `pallets/click` without modifying source files.
-
-- Claims evaluated: 7
-- SAFE TO SAY: 6/7
-- UNSAFE TO SAY: 1/7
-- Fix First flagged the deliberately unbacked claim
-
-This shows Prestige Forge can produce clean support where proof exists, while still refusing unsupported claims.
+This is claim safety — not legal review, not certification, not compliance theater. The engine maps claims to evidence and tells you what the proof actually supports.
 
 ---
 
@@ -53,17 +39,13 @@ It has been used internally by Razorglint Labs to check public-facing claim lang
 
 This internal use produced claim safety packs, approved/forbidden claim lists, required qualifiers, outreach guardrails, and proof-backed public language.
 
-This does not claim customer deployment, third-party validation, certification, or legal compliance. It shows that Prestige Forge is already being used for the job it was built to do: preventing unsupported public claims before publication.
-
-### Client Zero — Self-Verification
-
-![Client Zero — 15/15 SAFE TO SAY](assets/proof/prestige_forge_client_zero_15_safe.jpg)
+This does not claim customer deployment, third-party validation, certification, or legal compliance. It shows Prestige Forge being used for the job it was built to do: preventing unsupported public claims before publication.
 
 ### Systems Architecture — 78 Claims Audited
 
 ![Systems Architecture Claim Safety Pack](assets/proof/prestige_forge_systems_architecture_claim_pack.jpg)
 
-### Unsafe Claim Firewall
+### Unsafe Claim Firewall — 12 Prohibitions, 14 Overclaims Rewritten
 
 ![Forbidden Claims Blocked](assets/proof/prestige_forge_forbidden_claims_blocked.jpg)
 
@@ -71,32 +53,120 @@ This does not claim customer deployment, third-party validation, certification, 
 
 ![Command Guardian Claim Safety](assets/proof/prestige_forge_command_guardian_claim_safety.jpg)
 
-### FleetSim — Evidence Scoping
+### FleetSim — Evidence Scoping Before Public Post
 
 ![FleetSim Claim Safety](assets/proof/prestige_forge_fleetsim_claim_safety.jpg)
 
-### Public Language Law
-
-![Public Language Law](assets/proof/prestige_forge_public_language_law.jpg)
-
-See [Internal Use Proof Manifest](assets/proof/PRESTIGE_FORGE_INTERNAL_USE_PROOF_MANIFEST.md) for source artifacts and non-claims.
+See the full set — including Client Zero self-verification, Public Language Law, and summary — in the [Internal Use Proof Manifest](assets/proof/PRESTIGE_FORGE_INTERNAL_USE_PROOF_MANIFEST.md).
 
 ---
 
-## Version
+## Client Zero — Self-Verification
 
-**0.1.0 — Source Release**
+Prestige Forge verified its own claims using its own engine. 15 claims declared. 25 proof checks executed. Result: **15/15 SAFE TO SAY, 0 UNSAFE.**
 
-- 798 tests passing
-- Proof engine: stdlib-only Python, zero external dependencies
+The same engine and report format used for this self-verification is available to buyers evaluating their own claims.
+
+See [Client Zero results](docs/client-zero.md) for the full self-verification record.
+
+![Client Zero — 15/15 SAFE TO SAY](assets/proof/prestige_forge_client_zero_15_safe.jpg)
+
+---
+
+## Open-Source Library Example
+
+### click — public open-source library
+
+Prestige Forge was run against the public open-source `pallets/click` repository without modifying source files.
+
+- Claims evaluated: 7
+- SAFE TO SAY: 6/7
+- UNSAFE TO SAY: 1/7
+- Fix First flagged the deliberately unbacked claim
+
+This shows Prestige Forge can produce clean verdicts where proof exists, while still refusing unsupported claims.
+
+---
+
+## Who This Is For
+
+| Use case | What Prestige Forge does |
+|---|---|
+| **Public posts / LinkedIn** | Checks draft claims against evidence before posting |
+| **Buyer decks** | Flags overclaims before they reach due diligence |
+| **Audit evidence packs** | Maps claims to proof artifacts, names gaps |
+| **Launch pages** | Prevents "certified" / "compliant" / "production-ready" overreach |
+| **Governance documentation** | Ensures stated capabilities match tested evidence |
+| **Internal remediation** | Produces approved wording after security fixes or version corrections |
+
+---
+
+## What Prestige Forge Does NOT Claim
+
+- It is not a legal compliance engine.
+- It is not a certification authority.
+- It does not replace counsel, auditors, or regulators.
+- It does not prove a system is production-ready.
+- It does not create evidence that does not exist.
+- It does not make unsafe claims safe by rewriting them.
+- It only helps map claims to available evidence and produce safer public language.
+
+No customer deployment claim. No third-party validation claim. No certification claim.
+
+---
+
+## Product Tiers
+
+### Free — Proof Visibility
+
+See your proof state. Badge and proof summary, verification history, structural self-check, and vault audit. Runs offline with stdlib-only Python. No accounts, no cloud. The local UI requires Flask.
+
+### Paid Tier 1 — Trust Transfer
+
+Share proof without sharing code. Generate a shareable proof report for buyers, auditors, or stakeholders — includes artifact references, workflow summaries, and verification instructions. The receiver can verify without source access.
+
+### Paid Tier 2 — Claims Safety
+
+Know what you can safely say. Compare declared claims against current proof state. Get per-claim verdicts: SAFE TO SAY, UNSAFE TO SAY, or PARTIALLY SUPPORTED. Fix First ranking shows which claims to address first. Temporal drift detection catches when proof degrades over time.
+
+See [Tier Overview](docs/tier-overview.md) for detailed breakdown and comparison.
+
+---
+
+## Commercial Options
+
+Prestige Forge can support:
+
+- Local proof-engine evaluation
+- Paid claim-safety review packages
+- White-label / OEM integration discussions
+- Internal governance language checks
+- Evidence-readiness pilots
+
+Pricing depends on scope, artifact volume, integration level, and whether the buyer needs reports, local tooling, or licensing.
+
+Contact **razorglint.ops@protonmail.com** to discuss.
+
+---
+
+## Local UI
+
+![Home — verified badge state](assets/screenshots/home-verified.png)
+
+A browser-based local interface for proof operations. Runs on your machine — no cloud, no accounts, no telemetry. See [Local UI Preview](docs/local-ui-preview.md).
+
+---
+
+## Current Status
+
+**Internal-use validated claim-safety engine.** Buyer-facing proof surface available. Local sample / pilot package preparing.
+
+- 798 tests passing (proof engine + local UI)
+- Proof engine: stdlib-only Python 3.11+
 - Local UI: requires Flask
-- Full product ladder: free proof visibility + paid trust transfer + paid claims safety
-- Local UI included
-- Python 3.11+ stdlib only (Flask for UI layer)
+- Three-tier product ladder: free proof visibility + paid trust transfer + paid claims safety
 
-![Home — verified project](assets/screenshots/home-verified.png)
-
-![Claims Safety Report](assets/screenshots/claims-safety.png)
+This is not production-certified. This is not customer-deployed. This is a working claim-safety engine with internal proof-of-use across the Razorglint portfolio.
 
 ---
 
@@ -109,6 +179,7 @@ See [Internal Use Proof Manifest](assets/proof/PRESTIGE_FORGE_INTERNAL_USE_PROOF
 | [Client Zero](docs/client-zero.md) | Self-verification proving run results |
 | [Local UI Preview](docs/local-ui-preview.md) | Browser-based local interface for proof operations |
 | [Examples](examples/) | Per-tier example artifacts |
+| [Internal Use Proof Manifest](assets/proof/PRESTIGE_FORGE_INTERNAL_USE_PROOF_MANIFEST.md) | Source artifacts and non-claims for proof images |
 
 ---
 

@@ -60,7 +60,7 @@ If your tier includes Share Proof, click **Generate** under the Share Proof card
 
 See [examples/paid-shareable-proof-report/](../examples/paid-shareable-proof-report/) for what the output looks like.
 
-## 8. Check claims safety (Tier 2 — Beta)
+## 8. Check claims safety (Tier 2)
 
 If your tier includes Check Claims, create a `claim_registry.json` in your **project root** (the same folder you selected in Step 4) listing the claims you make publicly. The UI auto-detects `claim_registry.json` or `claims.json` in your project root when you save project settings. Then click **Run** under the Check Claims card.
 
@@ -78,7 +78,7 @@ See [examples/paid-claims-safety/](../examples/paid-claims-safety/) for example 
 
 This is a source release. The proof engine is pure Python (stdlib only, no dependencies). The local UI is a Flask app that talks directly to the engine on your machine. Nothing leaves your machine. No cloud, no accounts, no telemetry.
 
-Tier activation is stored in `~/.prestige-forge/ui_activation.json`. In this beta, tiers are activated by editing that file directly or requesting access. There is no automated payment enforcement — this is by design for the beta period.
+Tier activation is stored in `~/.prestige-forge/ui_activation.json`. Tiers are activated by editing that file directly or requesting access. There is no automated payment enforcement — this is by design for the current release.
 
 ## Next steps
 
