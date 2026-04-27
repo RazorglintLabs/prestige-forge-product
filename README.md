@@ -35,7 +35,7 @@ Then open the local UI and inspect:
 - what proof was generated
 - what claims are safe to say
 
-No setup. No dependencies. No accounts.
+Minimal setup. No accounts. The proof engine is stdlib-only; the local UI has its own lightweight dependencies.
 
 ---
 
@@ -57,7 +57,7 @@ Backed by:
 
 No dashboards.  
 No “trust me.”  
-**Only verifiable truth.**
+**Only evidence-backed claim verdicts.**
 
 ---
 
@@ -75,7 +75,7 @@ So when someone says:
 
 You often cannot verify that claim from the available proof.
 
-**Prestige Forge fixes that.**
+**Prestige Forge was built to close that gap.**
 
 ---
 
