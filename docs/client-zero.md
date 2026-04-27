@@ -25,7 +25,7 @@ Prestige Forge ran its own Claims Safety Engine against its own product claims o
 
 ## What This Means
 
-Every public-facing claim made by Prestige Forge has been verified against its own proof state using its own engine. No claim was found to be unsafe or partially supported. The same engine and report format used for this self-verification is what customers receive when they run Prestige Forge on their own projects.
+In this self-verification run, every declared public-facing claim was checked against Prestige Forge’s own proof state. against its own proof state using its own engine. No claim was found to be unsafe or partially supported. The same engine and report format used for this self-verification is what customers receive when they run Prestige Forge on their own projects.
 
 ## Artifacts Produced
 
