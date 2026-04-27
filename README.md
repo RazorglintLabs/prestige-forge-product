@@ -2,6 +2,10 @@
 
 > **Check what you can safely say — before it ships.**
 
+<p align="center">
+  <img src="assets/prestige-forge-banner.jpg" alt="Prestige Forge — proof-first claim safety engine" width="100%">
+</p>
+
 Prestige Forge is a proof-first claim-safety engine. It compares system claims against available evidence and returns buyer-safe verdicts:
 
 - **SAFE TO SAY** — fully backed by evidence
