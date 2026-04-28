@@ -1,0 +1,60 @@
+{
+  "description": "Expected verdicts for sample_claims.json against sample_evidence.json. Exact timestamps and hashes will differ per run.",
+  "expected_verdicts": [
+    {
+      "claim_id": "CG-131-PASS",
+      "text": "Command Guardian has 131 passing tests after remediation.",
+      "expected_verdict": "SAFE_TO_SAY",
+      "reason": "Claim directly matches evidence (131 passing tests, remediation) and does not exceed stated limitations."
+    },
+    {
+      "claim_id": "FS-103-PASS",
+      "text": "FleetSim currently has 103 passing simulation governance tests.",
+      "expected_verdict": "SAFE_TO_SAY",
+      "reason": "Claim directly matches evidence (103 passing, simulation governance) and does not exceed stated limitations."
+    },
+    {
+      "claim_id": "FS-SIM-GRADE",
+      "text": "FleetSim is a simulation-grade proving ground for SAR.",
+      "expected_verdict": "SAFE_WITH_QUALIFIER",
+      "reason": "Claim is supported but requires scope qualifier: simulation only, not a deployment or hardware claim."
+    },
+    {
+      "claim_id": "PF-INTERNAL-USE",
+      "text": "Prestige Forge has been used internally by Razorglint Labs to check public-facing claim language.",
+      "expected_verdict": "SAFE_WITH_QUALIFIER",
+      "reason": "Claim is supported but requires scope qualifier: internal use only, not customer deployment."
+    },
+    {
+      "claim_id": "CG-PROD-READY",
+      "text": "Command Guardian is production-ready.",
+      "expected_verdict": "FORBIDDEN",
+      "reason": "'Production-ready' requires deployment evidence not present in sample evidence."
+    },
+    {
+      "claim_id": "FS-REAL-WORLD",
+      "text": "FleetSim proves real-world fleet safety.",
+      "expected_verdict": "UNSAFE_OVERCLAIM",
+      "reason": "Extends simulation evidence to real-world deployment claim."
+    },
+    {
+      "claim_id": "PF-LEGAL-COMPLIANT",
+      "text": "Prestige Forge makes projects legally compliant.",
+      "expected_verdict": "FORBIDDEN",
+      "reason": "Contains forbidden phrase: 'legally compliant'."
+    },
+    {
+      "claim_id": "SYS-TAMPER-PROOF",
+      "text": "The system is tamper-proof.",
+      "expected_verdict": "FORBIDDEN",
+      "reason": "Contains forbidden phrase: 'tamper-proof'."
+    }
+  ],
+  "expected_verdict_counts": {
+    "SAFE_TO_SAY": 2,
+    "SAFE_WITH_QUALIFIER": 2,
+    "UNSAFE_OVERCLAIM": 1,
+    "FORBIDDEN": 3,
+    "NEEDS_MORE_EVIDENCE": 0
+  }
+}

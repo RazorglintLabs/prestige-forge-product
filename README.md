@@ -51,6 +51,21 @@ This is claim safety — not legal review, not certification, not compliance the
 
 ---
 
+## Try It Locally in 2 Minutes
+
+Prestige Forge includes a small offline sample tester. It checks sample claims against sample evidence and writes a timestamped mini truthpack with verdicts, qualifiers, safer rewrites, a manifest, and SHA-256 checksums.
+
+```bash
+cd examples/try-this-2-minutes
+python run_sample.py
+```
+
+No external dependencies. Python 3.11+ stdlib only. Each run produces a fresh timestamped output folder.
+
+See [examples/try-this-2-minutes/](examples/try-this-2-minutes/) for the full sample, expected verdicts, and an example output snapshot.
+
+---
+
 ## Internal Razorglint Use
 
 Prestige Forge is no longer only a self-verification demo.

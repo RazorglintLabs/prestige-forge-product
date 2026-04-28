@@ -1,0 +1,50 @@
+[
+  {
+    "claim_id": "CG-131-PASS",
+    "text": "Command Guardian has 131 passing tests after remediation.",
+    "project": "Command Guardian",
+    "intended_context": "README"
+  },
+  {
+    "claim_id": "FS-103-PASS",
+    "text": "FleetSim currently has 103 passing simulation governance tests.",
+    "project": "FleetSim",
+    "intended_context": "README"
+  },
+  {
+    "claim_id": "FS-SIM-GRADE",
+    "text": "FleetSim is a simulation-grade proving ground for SAR.",
+    "project": "FleetSim",
+    "intended_context": "LinkedIn"
+  },
+  {
+    "claim_id": "PF-INTERNAL-USE",
+    "text": "Prestige Forge has been used internally by Razorglint Labs to check public-facing claim language.",
+    "project": "Prestige Forge",
+    "intended_context": "buyer deck"
+  },
+  {
+    "claim_id": "CG-PROD-READY",
+    "text": "Command Guardian is production-ready.",
+    "project": "Command Guardian",
+    "intended_context": "outreach email"
+  },
+  {
+    "claim_id": "FS-REAL-WORLD",
+    "text": "FleetSim proves real-world fleet safety.",
+    "project": "FleetSim",
+    "intended_context": "LinkedIn"
+  },
+  {
+    "claim_id": "PF-LEGAL-COMPLIANT",
+    "text": "Prestige Forge makes projects legally compliant.",
+    "project": "Prestige Forge",
+    "intended_context": "buyer deck"
+  },
+  {
+    "claim_id": "SYS-TAMPER-PROOF",
+    "text": "The system is tamper-proof.",
+    "project": "Razorglint Architecture",
+    "intended_context": "outreach email"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "evidence_id": "EV-CG-REMEDIATION",
+    "project": "Command Guardian",
+    "evidence_type": "test_results",
+    "summary": "131/131 tests passing after emergency security remediation. DENY receipt sanitization implemented. Critical bypass classes closed in tested set.",
+    "supported_claim_keywords": ["131 passing tests", "remediation", "bypass classes closed", "DENY receipt sanitization"],
+    "limitations": ["Not production-ready", "Not certified", "SAR integration deferred", "Receipt signing deferred", "Hardened prototype only"],
+    "source_ref": "Command Guardian test suite — post-remediation audit"
+  },
+  {
+    "evidence_id": "EV-FS-SIMULATION",
+    "project": "FleetSim",
+    "evidence_type": "test_results",
+    "summary": "103 tests passing. Simulation-grade trust-plane proving ground for SAR. Tests cover doctrine enforcement, identity lifecycle, scenarios, token rotation under partition.",
+    "supported_claim_keywords": ["103 passing", "simulation governance", "simulation-grade", "proving ground", "trust plane"],
+    "limitations": ["Not hardware-certified", "Not a deployment claim", "Simulation only", "Not real-world fleet safety"],
+    "source_ref": "FleetSim test suite — governance simulation tests"
+  },
+  {
+    "evidence_id": "EV-PF-INTERNAL-USE",
+    "project": "Prestige Forge",
+    "evidence_type": "internal_proof_reports",
+    "summary": "Internal Razorglint claim-safety proof reports produced. Systems-architecture claim pack (78 claims audited). Forbidden claims list maintained. Outreach guardrails applied.",
+    "supported_claim_keywords": ["internally", "claim language", "claim safety", "public-facing"],
+    "limitations": ["Internal use only", "Not customer deployment", "Not third-party validation", "Not certified"],
+    "source_ref": "Prestige Forge internal use proof manifest"
+  },
+  {
+    "evidence_id": "EV-CLAIM-SAFETY-LAW",
+    "project": "Razorglint Architecture",
+    "evidence_type": "governance_rule",
+    "summary": "Claim safety rules: production-ready requires deployment evidence. Legally compliant requires legal/compliance authority. Tamper-proof is forbidden; tamper-evident is the safer term when supported by evidence.",
+    "supported_claim_keywords": ["claim safety", "forbidden claims", "overclaim rules"],
+    "limitations": ["These are internal governance rules, not external certifications"],
+    "source_ref": "Razorglint approved/forbidden claims doctrine"
+  }
+]

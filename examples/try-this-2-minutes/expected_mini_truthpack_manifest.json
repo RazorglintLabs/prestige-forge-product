@@ -1,0 +1,21 @@
+{
+  "description": "Expected shape of the mini truthpack manifest. Fields marked <placeholder> change per run.",
+  "run_id": "<run_id>",
+  "generated_at_utc": "<generated_at_utc>",
+  "sample_version": "0.1.0",
+  "files_written": [
+    "README.md",
+    "manifest.json",
+    "mini_truthpack.json",
+    "verdict_report.json"
+  ],
+  "file_sha256": {
+    "README.md": "<sha256>",
+    "manifest.json": "<sha256>",
+    "mini_truthpack.json": "<sha256>",
+    "verdict_report.json": "<sha256>"
+  },
+  "input_claims_sha256": "<sha256>",
+  "input_evidence_sha256": "<sha256>",
+  "engine_file_sha256": "<sha256>"
+}

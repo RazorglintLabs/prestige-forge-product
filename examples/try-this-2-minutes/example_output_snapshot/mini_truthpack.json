@@ -1,0 +1,175 @@
+{
+  "run_id": "pf-sample-20260427-151448-8fa5e822",
+  "generated_at_utc": "2026-04-27T15:14:48Z",
+  "tool_name": "Prestige Forge Sample Tester",
+  "sample_version": "0.1.0",
+  "input_files": [
+    "sample_claims.json",
+    "sample_evidence.json"
+  ],
+  "input_hashes": {
+    "sample_claims.json": "999f4ba54d290e5ac187016eda5464f8f2f98d51ffbeceec426d1d939b400842",
+    "sample_evidence.json": "eb9285a07f176ebd3f819b81c03d47ee761ccc524c8b1bf6785e89ece0dd818e"
+  },
+  "verdict_counts": {
+    "SAFE_TO_SAY": 2,
+    "SAFE_WITH_QUALIFIER": 2,
+    "FORBIDDEN": 3,
+    "UNSAFE_OVERCLAIM": 1
+  },
+  "claims_checked": 8,
+  "evidence_records_used": 4,
+  "verdicts": [
+    {
+      "claim_id": "CG-131-PASS",
+      "original_claim": "Command Guardian has 131 passing tests after remediation.",
+      "project": "Command Guardian",
+      "intended_context": "README",
+      "verdict": "SAFE_TO_SAY",
+      "reason": "Claim directly matches evidence and does not exceed stated limitations.",
+      "evidence_refs": [
+        "EV-CG-REMEDIATION"
+      ],
+      "required_qualifier": null,
+      "safer_rewrite": null,
+      "limitation_notes": [
+        "Hardened prototype only",
+        "Not certified",
+        "Not production-ready",
+        "Receipt signing deferred",
+        "SAR integration deferred"
+      ]
+    },
+    {
+      "claim_id": "FS-103-PASS",
+      "original_claim": "FleetSim currently has 103 passing simulation governance tests.",
+      "project": "FleetSim",
+      "intended_context": "README",
+      "verdict": "SAFE_TO_SAY",
+      "reason": "Claim directly matches evidence and does not exceed stated limitations.",
+      "evidence_refs": [
+        "EV-FS-SIMULATION"
+      ],
+      "required_qualifier": null,
+      "safer_rewrite": null,
+      "limitation_notes": [
+        "Not a deployment claim",
+        "Not hardware-certified",
+        "Not real-world fleet safety",
+        "Simulation only"
+      ]
+    },
+    {
+      "claim_id": "FS-SIM-GRADE",
+      "original_claim": "FleetSim is a simulation-grade proving ground for SAR.",
+      "project": "FleetSim",
+      "intended_context": "LinkedIn",
+      "verdict": "SAFE_WITH_QUALIFIER",
+      "reason": "Claim is supported but requires scope qualifier: Simulation only \u2014 not a deployment or hardware claim.",
+      "evidence_refs": [
+        "EV-FS-SIMULATION"
+      ],
+      "required_qualifier": "Simulation only \u2014 not a deployment or hardware claim.",
+      "safer_rewrite": null,
+      "limitation_notes": [
+        "Not a deployment claim",
+        "Not hardware-certified",
+        "Not real-world fleet safety",
+        "Simulation only"
+      ]
+    },
+    {
+      "claim_id": "PF-INTERNAL-USE",
+      "original_claim": "Prestige Forge has been used internally by Razorglint Labs to check public-facing claim language.",
+      "project": "Prestige Forge",
+      "intended_context": "buyer deck",
+      "verdict": "SAFE_WITH_QUALIFIER",
+      "reason": "Claim is supported but requires scope qualifier: Internal use only \u2014 not customer deployment or third-party validation.",
+      "evidence_refs": [
+        "EV-PF-INTERNAL-USE"
+      ],
+      "required_qualifier": "Internal use only \u2014 not customer deployment or third-party validation.",
+      "safer_rewrite": null,
+      "limitation_notes": [
+        "Internal use only",
+        "Not certified",
+        "Not customer deployment",
+        "Not third-party validation"
+      ]
+    },
+    {
+      "claim_id": "CG-PROD-READY",
+      "original_claim": "Command Guardian is production-ready.",
+      "project": "Command Guardian",
+      "intended_context": "outreach email",
+      "verdict": "FORBIDDEN",
+      "reason": "'Production-ready' requires deployment evidence. Sample evidence explicitly states this is not available.",
+      "evidence_refs": [],
+      "required_qualifier": null,
+      "safer_rewrite": "Command Guardian is a hardened prototype with 131 passing tests. It is not production-ready.",
+      "limitation_notes": [
+        "Production-ready requires deployment evidence not present in sample evidence."
+      ]
+    },
+    {
+      "claim_id": "FS-REAL-WORLD",
+      "original_claim": "FleetSim proves real-world fleet safety.",
+      "project": "FleetSim",
+      "intended_context": "LinkedIn",
+      "verdict": "UNSAFE_OVERCLAIM",
+      "reason": "Extends simulation evidence to real-world deployment claim.",
+      "evidence_refs": [],
+      "required_qualifier": null,
+      "safer_rewrite": "FleetSim is a simulation-grade proving ground for SAR governance testing.",
+      "limitation_notes": [
+        "Simulation evidence cannot support real-world safety claims."
+      ]
+    },
+    {
+      "claim_id": "PF-LEGAL-COMPLIANT",
+      "original_claim": "Prestige Forge makes projects legally compliant.",
+      "project": "Prestige Forge",
+      "intended_context": "buyer deck",
+      "verdict": "FORBIDDEN",
+      "reason": "Contains forbidden phrase: 'legally compliant'.",
+      "evidence_refs": [],
+      "required_qualifier": null,
+      "safer_rewrite": null,
+      "limitation_notes": [
+        "No safe rewrite available."
+      ]
+    },
+    {
+      "claim_id": "SYS-TAMPER-PROOF",
+      "original_claim": "The system is tamper-proof.",
+      "project": "Razorglint Architecture",
+      "intended_context": "outreach email",
+      "verdict": "FORBIDDEN",
+      "reason": "Contains forbidden phrase: 'tamper-proof'.",
+      "evidence_refs": [],
+      "required_qualifier": null,
+      "safer_rewrite": "Tamper-evident (where supported by hash-chain evidence).",
+      "limitation_notes": [
+        "'Tamper-proof' is an absolute claim. 'Tamper-evident' is the defensible term."
+      ]
+    }
+  ],
+  "limitations": [
+    "This is a sample tester with deterministic rules, not a production engine.",
+    "Evidence records are sample summaries, not live proof artifacts.",
+    "Verdicts are based on keyword matching, not semantic analysis."
+  ],
+  "non_claims": [
+    "This output does not prove legal compliance.",
+    "This output does not certify any system.",
+    "This output does not prove production readiness.",
+    "This output does not replace legal, audit, or regulatory review."
+  ],
+  "report_files": [
+    "verdict_report.json",
+    "mini_truthpack.json",
+    "manifest.json",
+    "checksums.sha256",
+    "README.md"
+  ]
+}

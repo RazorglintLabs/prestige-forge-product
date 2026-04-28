@@ -1,0 +1,18 @@
+{
+  "run_id": "pf-sample-20260427-151448-8fa5e822",
+  "generated_at_utc": "2026-04-27T15:14:48Z",
+  "sample_version": "0.1.0",
+  "files_written": [
+    "README.md",
+    "mini_truthpack.json",
+    "verdict_report.json"
+  ],
+  "file_sha256": {
+    "mini_truthpack.json": "5fe1002d8c4cfb05d9ec8e66a4f036bc0be5b87b9784e130f5cdd5093248045b",
+    "README.md": "fb9fe01d4c60e13f87545905819894a62f08c07f352e2ef5d1c6444cef33ec10",
+    "verdict_report.json": "0622684462594adcb7d8eaf5cb455324d9ddb76f86a18f2ab9cdaeb9405e6077"
+  },
+  "input_claims_sha256": "999f4ba54d290e5ac187016eda5464f8f2f98d51ffbeceec426d1d939b400842",
+  "input_evidence_sha256": "eb9285a07f176ebd3f819b81c03d47ee761ccc524c8b1bf6785e89ece0dd818e",
+  "engine_file_sha256": "3673fe4d820f3310e0b01a377fd1e6344c87c39ac75603d8c0629ac9ebe69e51"
+}
