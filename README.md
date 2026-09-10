@@ -51,7 +51,17 @@ This is claim safety — not legal review, not certification, not compliance the
 
 ---
 
+## For Legal, Accounting and Office Teams
+
+The new **Office Review Desk evaluation build** organizes exact statements, supporting document references, limitations, owners and expiring human reviews into a local matter record. Export a readable handoff with open questions preserved. Source documents stay out of the export unless explicitly included.
+
+[Explore professional workflows and the five-minute demo](docs/office-workflows.md). This is an evaluation build; readiness records human review and does not establish legal safety, accounting accuracy or factual truth.
+
+---
+
 ## Try It Locally in 2 Minutes
+
+**Sample boundary:** the following public tester uses keyword matching against synthetic summaries. Its labels are sample results, not an assessment of arbitrary legal, accounting or client statements. The Office Review Desk requires explicit source references and human review instead.
 
 Prestige Forge includes a small offline sample tester. It checks sample claims against sample evidence and writes a timestamped mini truthpack with verdicts, qualifiers, safer rewrites, a manifest, and SHA-256 checksums.
 
