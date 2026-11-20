@@ -1,6 +1,16 @@
-# Prestige Forge | Evidence-to-Claim Review
+<div align="center">
+
+# PRESTIGE FORGE
+**Evidence-to-Claim Review | Original Razorglint Demonstration**
+
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-local%20UI-000000?style=for-the-badge&logo=flask&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-proof%20records-334155?style=for-the-badge&logo=json&logoColor=white)
+![License](https://img.shields.io/badge/Source-Proprietary-5D406F?style=for-the-badge)
 
 **Check the claim against its evidence before publishing it.**
+
+</div>
 
 Prestige Forge is Razorglint's earlier local claim-safety tool and demonstration surface. It evaluates **declared claims against supplied proof records**, reports unsupported or qualified language and produces review artifacts for human inspection.
 
@@ -28,6 +38,12 @@ The repository retains [internal use examples](assets/proof/PRESTIGE_FORGE_INTER
 In particular, **a product marking its own claims SAFE is not independent assurance**. A positive verdict means the supplied claims met the tool's declared checks against the supplied artifacts; it does not prove authentic source data, legal compliance, unrestricted production safety or real-world performance.
 
 The older README cited **798 passing tests**, but this refresh does not promote that historical count into a current exact-source CI claim. For current independently verifiable public testing, see [Compliance Drift Detector's dated release receipt](https://github.com/RazorglintLabs/ComplianceDriftDetector/blob/main/docs/RELEASE_STATUS.md).
+
+## Related engineering cases
+
+The broader Razorglint portfolio also includes [BRE's source-aware regression and candidate review](https://github.com/RazorglintLabs/damian-ketting-ai-systems-portfolio/blob/main/CASE_BRE_2026-11-20.md), [Elite Pantry's method and evidence qualification](https://github.com/RazorglintLabs/damian-ketting-ai-systems-portfolio/blob/main/CASE_ELITE_PANTRY_2026-11-20.md), and a [scope-limited Proton-related public-source research methodology](https://github.com/RazorglintLabs/damian-ketting-ai-systems-portfolio/blob/main/CASE_PROTON_RESEARCH_2026-11-20.md).
+
+These are **independent workstreams**, not a unified shipped product, proof of a vendor vulnerability or a transfer of private source rights.
 
 ## Today’s Razorglint portfolio
 
